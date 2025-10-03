@@ -30,7 +30,7 @@ const HomePage: NextPage = () => {
             <div className="order-2 md:order-1">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img 
-                src="/hero-image.png" 
+                src="/logo.png" 
                 alt="A woman with a perfect, confident smile" 
                 className="rounded-3xl shadow-2xl w-full h-auto object-cover"
               />
