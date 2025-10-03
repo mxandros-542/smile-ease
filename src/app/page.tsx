@@ -1,7 +1,6 @@
-'use client'; // This directive makes the component interactive
+'use client'; // This directive allows for client-side interactivity
 
 import type { NextPage } from 'next';
-// import Image from 'next/image'; // Removed this line to fix the build error
 
 const HomePage: NextPage = () => {
   return (
@@ -10,8 +9,8 @@ const HomePage: NextPage = () => {
         {/* Header Navigation */}
         <header className="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200/50">
           <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/logo.png" alt="Smile Ease Logo" className="h-14 w-auto" />
-            {/* Navigation Links Added Back */}
             <div className="hidden md:flex items-center space-x-8">
               <a href="#about" className="text-gray-600 hover:text-[#0a98ff] transition-colors">About Us</a>
               <a href="#why-us" className="text-gray-600 hover:text-[#0a98ff] transition-colors">Why Us</a>
@@ -29,11 +28,11 @@ const HomePage: NextPage = () => {
           <div className="container mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 items-center gap-12 relative z-10">
             {/* Left Column - Image */}
             <div className="order-2 md:order-1">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img 
                 src="/hero-image.png" 
                 alt="A woman with a perfect, confident smile" 
                 className="rounded-3xl shadow-2xl w-full h-auto object-cover"
-                onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/600x700/e0f7ff/0a98ff?text=Your+Smile'; }}
               />
             </div>
             
@@ -44,7 +43,7 @@ const HomePage: NextPage = () => {
                 Get high-quality, affordable dental aligners delivered directly to your door. Straighten your teeth comfortably and confidently, without the hassle of traditional braces.
               </p>
               <a href="#cta" style={{ backgroundColor: '#003d66' }} className="inline-block text-white font-bold py-3 px-10 rounded-full text-lg hover:bg-opacity-90 transition-transform hover:scale-105 shadow-lg">
-                LET'S GET STARTED!
+                LET&apos;S GET STARTED!
               </a>
             </div>
           </div>
@@ -92,11 +91,11 @@ const HomePage: NextPage = () => {
             <div className="grid md:grid-cols-3 gap-10">
               {/* Product Card 1 */}
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden group">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img 
                   src="/aligners.png" 
                   alt="Clear Dental Aligners" 
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" 
-                  onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/600x400/e0f7ff/0a98ff?text=Aligners'; }}
                 />
                 <div className="p-6">
                   <h3 className="font-bold text-xl mb-2" style={{ color: '#003d66' }}>CLEAR ALIGNERS</h3>
@@ -105,11 +104,11 @@ const HomePage: NextPage = () => {
               </div>
               {/* Product Card 2 */}
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden group">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img 
                   src="/retainers.png" 
-                  alt="Dental Retainers" 
+                  alt="Dental Retainers"
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/600x400/e0f7ff/0a98ff?text=Retainers'; }}
                 />
                 <div className="p-6">
                   <h3 className="font-bold text-xl mb-2" style={{ color: '#003d66' }}>RETAINERS</h3>
@@ -118,11 +117,11 @@ const HomePage: NextPage = () => {
               </div>
               {/* Product Card 3 */}
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden group">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img 
                   src="/care-products.png" 
                   alt="Dental Care Products" 
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/600x400/e0f7ff/0a98ff?text=Care+Products'; }}
                 />
                 <div className="p-6">
                   <h3 className="font-bold text-xl mb-2" style={{ color: '#003d66' }}>DENTAL CARE PRODUCTS</h3>
@@ -165,7 +164,7 @@ const HomePage: NextPage = () => {
               Explore our products and start your journey to a confident, beautiful smile today.
             </p>
             <a href="#products" className="inline-block bg-white text-blue-950 font-bold py-3 px-10 rounded-full text-lg hover:bg-gray-200 transition-transform hover:scale-105 shadow-lg">
-              LET'S GET STARTED!
+              LET&apos;S GET STARTED!
             </a>
           </div>
         </section>
