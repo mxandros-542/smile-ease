@@ -1,6 +1,7 @@
 'use client'; // This directive makes the component interactive
 
 import type { NextPage } from 'next';
+// import Image from 'next/image'; // Removed this line to fix the build error
 
 const HomePage: NextPage = () => {
   return (
@@ -29,7 +30,7 @@ const HomePage: NextPage = () => {
             {/* Left Column - Image */}
             <div className="order-2 md:order-1">
               <img 
-                src="/logo.png" 
+                src="/hero-image.png" 
                 alt="A woman with a perfect, confident smile" 
                 className="rounded-3xl shadow-2xl w-full h-auto object-cover"
                 onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/600x700/e0f7ff/0a98ff?text=Your+Smile'; }}
@@ -57,7 +58,7 @@ const HomePage: NextPage = () => {
               At Smile-Ease, we believe everyone deserves a confident smile. Our mission is to provide easy-to-use, invisible aligners that fit seamlessly into your lifestyle. No visits to the clinic, no waiting—just a perfect smile at your convenience.
             </p>
             <blockquote className="font-serif text-2xl md:text-3xl italic max-w-2xl mx-auto" style={{ color: '#0a98ff' }}>
-              “Confidence starts with a smile - we make it effortless.”
+              &ldquo;Confidence starts with a smile - we make it effortless.&rdquo;
             </blockquote>
           </div>
         </section>
